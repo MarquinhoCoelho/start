@@ -16,12 +16,8 @@ import { HeaderComponent } from './header/header.component';
     NgbModule,
     AuthModule,
     I18nModule,
-    RouterModule
+    RouterModule,
   ],
-  declarations: [
-    HeaderComponent,
-    ShellComponent
-  ]
+  declarations: [HeaderComponent, ShellComponent],
 })
-export class ShellModule {
-}
+export class ShellModule {}

@@ -19,15 +19,14 @@ describe('HeaderComponent', () => {
         RouterTestingModule,
         NgbModule,
         TranslateModule.forRoot(),
-        I18nModule
+        I18nModule,
       ],
       declarations: [HeaderComponent],
       providers: [
         { provide: AuthenticationService, useClass: MockAuthenticationService },
-        { provide: CredentialsService, useClass: MockCredentialsService }
-      ]
-    })
-    .compileComponents();
+        { provide: CredentialsService, useClass: MockCredentialsService },
+      ],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
